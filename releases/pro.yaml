@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: helmbasic-production
-  namespace: staging
+  namespace: production
 spec:
   releaseName: helmbasic-production
   chart:
