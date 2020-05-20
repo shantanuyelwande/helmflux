@@ -1,14 +1,14 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: helmbasic-staging
-  namespace: staging
+  name: helmbasic-production
+  namespace: production
 spec:
-  releaseName: helmbasic-staging
+  releaseName: helmbasic-production
   chart:
     git: git@github.com:mifonpe/helmflux
     path: /helmbasics
-    ref: staging
+    ref: production
   values:
     replicaCount: 3
     ingress:
