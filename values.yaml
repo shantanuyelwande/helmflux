@@ -26,7 +26,7 @@ ingress:
     #nginx.ingress.kubernetes.io/auth-secret: "basic-auth"
     #nginx.ingress.kubernetes.io/auth-type: "basic"
     #nginx.ingress.kubernetes.io/rewrite-target: /
-  host: mywebserver.dev.kubesandclouds.com
+  host: mywebserver.kubesandclouds.com
   path: /
 
 resources: 
