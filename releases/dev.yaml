@@ -7,7 +7,7 @@ spec:
   releaseName: helmbasic-develop
   chart:
     git: git@github.com:mifonpe/helmflux
-    path: /
+    path: /helmbasics
     ref: develop
   values:
     replicaCount: 1

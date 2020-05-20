@@ -7,7 +7,7 @@ spec:
   releaseName: helmbasic-staging
   chart:
     git: git@github.com:mifonpe/helmflux
-    path: /
+    path: /helmbasics
     ref: staging
   values:
     replicaCount: 3
