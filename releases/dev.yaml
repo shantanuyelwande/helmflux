@@ -10,6 +10,7 @@ spec:
     path: /helmbasics
     ref: develop
   values:
+    environment: development
     replicaCount: 1
     ingress:
       host: mywebserver.dev.kubesandclouds.com
