@@ -5,4 +5,4 @@ metadata:
   labels:
     app: {{ .Values.appname }}
 data:
-  env: test
+  env: {{ .Values.environment }}

@@ -10,6 +10,7 @@ spec:
     path: /helmbasics
     ref: staging
   values:
+    environment: staging
     replicaCount: 2
     ingress:
       host: mywebserver.staging.kubesandclouds.com
