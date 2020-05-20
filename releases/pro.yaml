@@ -9,7 +9,7 @@ spec:
   releaseName: helmbasic-production
   chart:
     git: git@github.com:mifonpe/helmflux
-    path: /helmbasics
+    path: helmbasics
     ref: master
   values:
     environment: production
