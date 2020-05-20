@@ -3,6 +3,8 @@ kind: HelmRelease
 metadata:
   name: helmbasic-staging
   namespace: staging
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   releaseName: helmbasic-staging
   chart:

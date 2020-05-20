@@ -3,6 +3,8 @@ kind: HelmRelease
 metadata:
   name: helmbasic-production
   namespace: production
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   releaseName: helmbasic-production
   chart:

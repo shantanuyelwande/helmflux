@@ -3,6 +3,8 @@ kind: HelmRelease
 metadata:
   name: helmbasic-develop
   namespace: develop
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   releaseName: helmbasic-develop
   chart:
