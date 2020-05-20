@@ -5,15 +5,18 @@ kind: Ingress
 metadata:
   name: {{ .Release.Name }}-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    labels:
+    {{- range $key, $value := .Values.ingress.annotations }}
+      {{ $key }}: {{ $value | quote }}
+    {{- end }}  
+  labels:
         app: {{ .Values.appname }}
 spec:
   rules:
-  - http:
+  - host: {{ .Values.ingress.host  }}
+    http:
       paths:
-      - path: {{ .Values.ingress.hosts.path }}
+      - path: {{ .Values.ingress.path  }}
         backend:
-          serviceName: {{ .Release.Name }}-{{ .Values.service.servicename }}
+          serviceName: {{ .Values.service.servicename }}
           servicePort: {{ .Values.service.port }}
 {{- end }}
