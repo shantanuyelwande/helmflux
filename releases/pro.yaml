@@ -10,7 +10,7 @@ spec:
   chart:
     git: git@github.com:mifonpe/helmflux
     path: /helmbasics
-    ref: production
+    ref: master
   values:
     environment: production
     replicaCount: 3
