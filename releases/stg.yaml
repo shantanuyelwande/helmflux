@@ -1,0 +1,15 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: helmbasic-staging
+  namespace: staging
+spec:
+  releaseName: helmbasic-staging
+  chart:
+    git: git@github.com:mifonpe/helmflux
+    path: /
+    ref: staging
+  values:
+    replicaCount: 2
+    ingress:
+      host: mywebserver.staging.kubesandclouds.com
