@@ -9,5 +9,5 @@ spec:
   releaseName: nginx-ingress
   chart:
     git: git@github.com:mifonpe/helmflux
-    path: /nginx-ingress
+    path: nginx-ingress
     ref: master
