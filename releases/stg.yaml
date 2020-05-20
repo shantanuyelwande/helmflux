@@ -9,7 +9,7 @@ spec:
   releaseName: helmbasic-staging
   chart:
     git: git@github.com:mifonpe/helmflux
-    path: /helmbasics
+    path: helmbasics
     ref: staging
   values:
     environment: staging

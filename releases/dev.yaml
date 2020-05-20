@@ -9,7 +9,7 @@ spec:
   releaseName: helmbasic-develop
   chart:
     git: git@github.com:mifonpe/helmflux
-    path: /helmbasics
+    path: helmbasics
     ref: develop
   values:
     environment: development
