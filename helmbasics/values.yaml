@@ -3,8 +3,8 @@ appname: apache
 environment: dev
 replicaCount: 1
 image:
-  repository: docker.io/bitnami/apache
-  tag: 2.4.41-debian-10-r29
+  repository: fontanillamiguel/apache
+  tag: v0.0.1
   pullPolicy: IfNotPresent
 
 service:
