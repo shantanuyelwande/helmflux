@@ -17,3 +17,6 @@ spec:
     replicaCount: 1
     ingress:
       host: mywebserver.dev.kubesandclouds.com
+    image:
+      repository: fontanillamiguel/apache
+      tag: v0.0.1
