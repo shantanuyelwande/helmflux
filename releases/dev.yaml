@@ -5,6 +5,7 @@ metadata:
   namespace: develop
   annotations:
     fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:v*
 spec:
   releaseName: helmbasic-develop
   chart:
