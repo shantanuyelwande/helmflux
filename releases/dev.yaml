@@ -6,7 +6,6 @@ metadata:
   namespace: develop
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:v*
 spec:
   releaseName: helmbasic-develop
   chart:
@@ -18,6 +17,3 @@ spec:
     replicaCount: 1
     ingress:
       host: mywebserver.dev.kubesandclouds.com
-    image:
-      repository: fontanillamiguel/apache
-      tag: v0.0.2
