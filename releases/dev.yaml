@@ -1,3 +1,4 @@
+---
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
@@ -19,4 +20,4 @@ spec:
       host: mywebserver.dev.kubesandclouds.com
     image:
       repository: fontanillamiguel/apache
-      tag: v0.0.1
+      tag: v0.0.2
