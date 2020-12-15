@@ -9,11 +9,14 @@ metadata:
 spec:
   releaseName: helmbasic-develop
   chart:
-    git: git@github.com:mifonpe/helmflux
+    git: git@github.com:shantanuyelwande/helmflux
     path: helmbasics
     ref: develop
   values:
     environment: development
     replicaCount: 1
+    image:
+      repository: shantanuy/bitnami-apache
+      tag: v0.0.1    
     ingress:
       host: mywebserver.dev.kubesandclouds.com
