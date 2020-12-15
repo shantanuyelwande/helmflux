@@ -1,7 +1,7 @@
 
 appname: apache
 environment: dev
-replicaCount: 1
+replicaCount: 2
 image:
   repository: docker.io/bitnami/apache
   tag: latest
