@@ -8,7 +8,7 @@ metadata:
 spec:
   releaseName: helmbasic-staging
   chart:
-    git: git@github.com:mifonpe/helmflux
+    git: git@github.com:shantanuyelwande/helmflux
     path: helmbasics
     ref: staging
   values:
